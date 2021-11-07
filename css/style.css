@@ -1,0 +1,140 @@
+:root {
+  --bg-red: #FF0000;
+  --bg-blue: #0000ff;
+  --bg-yellow: #ffff00;
+  --bg-pink-light: #ff7eb4;
+  --bg-pink: #ff2581;
+}
+
+body {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.bg-img {
+  background-image: url(../assets/image/anime5.jpg);
+}
+
+.small-heart-container {
+  display: none;
+}
+
+.crm-flex {
+  display: flex;
+}
+
+.crm-flex-row {
+  flex-direction: row;
+}
+
+.crm-flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-heart {
+  font-size: 28px;
+  color: var(--bg-red);
+  position: absolute;
+  bottom: -100px;
+  animation: heart 2s linear infinite;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+    color: var(--bg-blue);
+  }
+  50% {
+    opacity: 1;
+    color: var(--bg-red);
+  }
+  100% {
+    bottom: 50%;
+    opacity: 0;
+    color: var(--bg-yellow);
+  }
+}
+
+.fa-heart:nth-child(2n) {
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.fa-heart:nth-child(3n) {
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.fa-heart:nth-child(4n) {
+  left: 30%;
+  animation-delay: 1.3s;
+}
+
+.fa-heart:nth-child(5n) {
+  left: 40%;
+  animation-delay: 0.7s;
+}
+
+.fa-heart:nth-child(6n) {
+  left: 50%;
+  animation-delay: 1.2s;
+}
+
+.fa-heart:nth-child(7n) {
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.fa-heart:nth-child(8n) {
+  left: 70%;
+  animation-delay: 0.8s;
+}
+
+.fa-heart:nth-child(9n) {
+  left: 80%;
+  animation-delay: 1s;
+}
+
+.fa-heart:nth-child(10n) {
+  left: 90%;
+  animation-delay: 0.7s;
+}
+
+.fa-heart:nth-child(11n) {
+  left: 98%;
+  animation-delay: 1s;
+}
+
